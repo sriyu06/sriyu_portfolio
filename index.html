@@ -1,0 +1,339 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Sriyuktha Balusu - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .card {
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skills-carousel {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Header Section -->
+    <header class="fixed w-full bg-gray-800 shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Sai Sriyuktha Balusu</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400 transition">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+                    <li><a href="#education" class="hover:text-blue-400 transition">Education</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-6 bg-gradient-to-r from-blue-900 to-gray-800">
+        <div class="container mx-auto text-center">
+            <!--<h1 class="text-5xl font-bold mb-6 fade-in">Sai Sriyuktha Balusu</h1>-->
+            <p class="text-xl mb-6">Final-year Computer Science undergraduate with strong foundations in software development, data structures, and machine learning. Experienced in developing AI-powered web applications and deep learning systems. Passionate about building scalable tech solutions and eager to contribute to innovative engineering teams.</p>
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="tel:+91-7893197568" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg">
+                    <i class="fas fa-phone mr-2"></i>Call Me
+                </a>
+                <a href="mailto:sriyukthabalusu@gmail.com" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg">
+                    <i class="fas fa-envelope mr-2"></i>Email Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Skills & Technologies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="card bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Programming_languages</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Python
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>C++
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>C
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="card bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Frontend_technologies</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>HTML
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>CSS
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>JavaScript
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="card bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Databases</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>SQL
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>MONGODB
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="card bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Technical_skills</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Machine Learning
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Natural Language Processing
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="card bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Frameworks_and_tools</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Jupyter Notebook
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Google Colab
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Git
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>GitHub
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>VSCode
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="card bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Cloud_and_devops</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>AWS (Basics)
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Git/GitHub
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="card bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Methodologies</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Agile
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Scrum
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="card bg-gray-700 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Soft_skills</h3>
+                    <ul class="space-y-2">
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Analytical Thinking
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Problem Solving
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Attention to detail
+                        </li>
+                        
+                        <li class="flex items-center">
+                            <i class="fas fa-code mr-2"></i>Communication Skills
+                        </li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-700">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center">Technical Projects</h2>
+            <div class="space-y-10">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Minimal Residual Disease Detection in Lymphoma | Python, TensorFlow, MobileNetV2, DenseNet201, CBAM</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Developed a deep learning model combining MobileNetV2 and DenseNet201 with CBAM attention layers, improving feature extraction and achieving 87.5% F1-score on MRD classification.</li>
+                        <li>Integrated multi-modal data (demographics + imaging) and applied attention-guided segmentation, boosting diagnostic accuracy by 12% compared to baseline CNN.</li>
+                        <li>Designed a hybrid CNN-RNN architecture with dropout and LSTM layers, reducing overfitting by 30% in limited-data settings and improving generalization across patient subgroups.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Fine-Tuning LLaMA 2 with QLoRA | Transformers, Hugging Face, LoRA, PyTorch</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Fine-tuned LLaMA 2–7B using QLoRA with 4-bit quantization and PEFT, resulting in 65% reduction in VRAM usage and enabling fine-tuning on consumer-grade GPUs (16 GB).</li>
+                        <li>Curated and preprocessed a 5,000+ QA pair dataset from NHM resources for pregnant women and ASHA workers; achieved 93% accuracy on domain-specific evaluation set.</li>
+                        <li>Deployed the model on the Hugging Face Hub with evaluation tracking via Weights & Biases, enabling accessible and scalable QA support in low-resource healthcare environments.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Image Dehazing using Boundary Constraints | OpenCV, Deep Learning, Quantization</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Built a deep learning-based image restoration pipeline using boundary constraint techniques, improving night vision image clarity by ~18% in PSNR on the D-Hazy dataset.</li>
+                        <li>Conducted qualitative analysis and real-time testing on surveillance footage, demonstrating clear enhancement in low-light visibility, aiding improved object recognition for security systems.</li>
+                        <li>Applied 4-bit quantization, reducing model size by 72% without significant accuracy loss; deployed on Hugging Face for public access with &lt;2 sec inference time per image on CPU.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Education Section -->
+    <section id="education" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Education</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold">B. Tech in Computer Science Engineering</h3>
+                    <p>VNR Vignana Jyothi Institute of Engineering and Technology (2021–2025)</p>
+                    <p>CGPA: 8.75 (as of 7th semester)</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Fiitjee Junior College, Hyderabad (2021)</h3>
+                    <p>Class 12 - MPC | Percentage: 97.2%</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">DAV Public School, Miyapur (2019)</h3>
+                    <p>Class 10 | Percentage: 95.6%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-12">Get In Touch</h2>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/sriyu_06" class="text-blue-400 hover:text-blue-300">
+                    <i class="fab fa-github fa-3x"></i>
+                </a>
+                <a href="https://linkedin.com/in/Sai Sriyuktha Balusu" class="text-blue-400 hover:text-blue-300">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a href="mailto:sriyukthabalusu@gmail.com" class="text-blue-400 hover:text-blue-300">
+                    <i class="fas fa-envelope fa-3x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <script>
+        // GSAP Animations
+        gsap.from("header", { y: -100, opacity: 0, duration: 0.5 });
+        gsap.from(".card", { 
+            scrollTrigger: {
+                trigger: ".card",
+                start: "top center"
+            },
+            y: 50, 
+            opacity: 0, 
+            duration: 0.5,
+            stagger: 0.2
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        });
+
+        document.querySelectorAll('.fade-in').forEach((el) => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
